@@ -1,0 +1,29 @@
+server:
+  port: ${SERVER_PORT:9090}
+
+spring:
+  application:
+    name: crop-health-backend
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/multimodal_crop_health?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:Tharun@1126}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 25MB
+
+app:
+  jwt-secret: ${JWT_SECRET:multimodal-crop-health-assessment-secure-jwt-key-2026-production}
+  jwt-expiration-hours: ${JWT_EXPIRATION_HOURS:48}
+  ml-service-url: ${ML_SERVICE_URL:http://localhost:8000}
+  upload-dir: ${UPLOAD_DIR:storage/uploads}

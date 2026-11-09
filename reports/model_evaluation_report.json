@@ -1,0 +1,299 @@
+{
+  "evaluation_timestamp": "2026-10-30T06:12:51.929828+00:00",
+  "model_versions": {
+    "image_baseline": "mobilenetv2-image-v1.0",
+    "multimodal_fusion": "multimodal-fusion-v1.0"
+  },
+  "dataset_summary": {
+    "name": "MangoLeafBD Dataset",
+    "total_images": 4000,
+    "num_classes": 8,
+    "classes": [
+      "Anthracnose",
+      "Bacterial Canker",
+      "Cutting Weevil",
+      "Die Back",
+      "Gall Midge",
+      "Healthy",
+      "Powdery Mildew",
+      "Sooty Mould"
+    ],
+    "train_set_size": 1600,
+    "test_set_size": 400
+  },
+  "image_baseline_metrics": {
+    "accuracy": 0.9975,
+    "macro_avg_f1": 0.9975,
+    "weighted_avg_f1": 0.9975,
+    "latency_ms": 27.4,
+    "per_class": {
+      "Anthracnose": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 47
+      },
+      "Bacterial Canker": {
+        "precision": 1.0,
+        "recall": 0.9783,
+        "f1_score": 0.989,
+        "support": 46
+      },
+      "Cutting Weevil": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 40
+      },
+      "Die Back": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 48
+      },
+      "Gall Midge": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 58
+      },
+      "Healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 57
+      },
+      "Powdery Mildew": {
+        "precision": 0.9821,
+        "recall": 1.0,
+        "f1_score": 0.991,
+        "support": 55
+      },
+      "Sooty Mould": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 49
+      }
+    },
+    "confusion_matrix": [
+      [
+        47,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        45,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        58,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        57,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        49
+      ]
+    ]
+  },
+  "multimodal_fusion_metrics": {
+    "accuracy": 0.9975,
+    "macro_avg_f1": 0.9975,
+    "weighted_avg_f1": 0.9975,
+    "per_class": {
+      "Anthracnose": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 47
+      },
+      "Bacterial Canker": {
+        "precision": 1.0,
+        "recall": 0.9783,
+        "f1_score": 0.989,
+        "support": 46
+      },
+      "Cutting Weevil": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 40
+      },
+      "Die Back": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 48
+      },
+      "Gall Midge": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 58
+      },
+      "Healthy": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 57
+      },
+      "Powdery Mildew": {
+        "precision": 0.9821,
+        "recall": 1.0,
+        "f1_score": 0.991,
+        "support": 55
+      },
+      "Sooty Mould": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 49
+      }
+    },
+    "confusion_matrix": [
+      [
+        47,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        45,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        48,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        58,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        57,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        49
+      ]
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-10-30T06:01:11.520990+00:00",
+  "summary": "Verified inventory of datasets available in D:\\Projects\\MultimodalCropHealthAssessment\\datasets",
+  "primary_training_corpus": "MangoLeafBD Dataset (4,000 real images across 8 disease & health categories)",
+  "datasets": [
+    {
+      "dataset_name": "MangoLeafBD Dataset",
+      "type": "directory_labeled_images",
+      "supported_crop": "Mango (Mangifera indica)",
+      "total_images": 4000,
+      "classes_count": 8,
+      "classes": [
+        {
+          "class_name": "Anthracnose",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "320x240"
+        },
+        {
+          "class_name": "Bacterial Canker",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "240x320"
+        },
+        {
+          "class_name": "Cutting Weevil",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "320x240"
+        },
+        {
+          "class_name": "Die Back",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "240x240"
+        },
+        {
+          "class_name": "Gall Midge",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "240x320"
+        },
+        {
+          "class_name": "Healthy",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "320x240"
+        },
+        {
+          "class_name": "Powdery Mildew",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "240x240"
+        },
+        {
+          "class_name": "Sooty Mould",
+          "image_count": 500,
+          "sample_verified": 50,
+          "corrupt_found": 0,
+          "sample_dimension": "240x320"
+        }
+      ],
+      "provenance": "MangoLeafBD: A Comprehensive Image Dataset for Mango Leaf Disease Classification",
+      "license": "Research and Academic Use / CC-BY-4.0",
+      "multimodal_status": "Image-only dataset. Paired environmental readings require greenhouse observation alignment or documented sensor records."
+    },
+    {
+      "dataset_name": "MH-SoyaHealthVision",
+      "type": "parquet_shards",
+      "supported_crop": "Soybean (Glycine max)",
+      "shards_count": 13,
+      "total_examples": 2782,
+      "classes_count": 6,
+      "classes": [
+        {
+          "class_name": "Caterpillar_Semilooper_Pest",
+          "image_count": 582
+        },
+        {
+          "class_name": "Frog_Leaf_Eye",
+          "image_count": 169
+        },
+        {
+          "class_name": "Healthy",
+          "image_count": 204
+        },
+        {
+          "class_name": "Mosaic",
+          "image_count": 707
+        },
+        {
+          "class_name": "Rust",
+          "image_count": 852
+        },
+        {
+          "class_name": "Spectoria_Brown_Spot",
+          "image_count": 268
+        }
+      ],
+      "provenance": "Shinde & Attar, Data in Brief 2025, doi: 10.17632/hkbgh5s3b7.1",
+      "license": "CC-BY-4.0",
+      "multimodal_status": "UAV and leaf image dataset for soybean health assessment."
+    },
+    {
+      "dataset_name": "PlantDoc",
+      "type": "parquet_shards",
+      "supported_crop": "Multi-crop (Tomato, Potato, Corn, Bell Pepper, Apple, Grape, etc.)",
+      "shards_count": 3,
+      "total_examples": 2346,
+      "categories_count": 29,
+      "provenance": "Singh et al., ACM CoDS-COMAD 2020",
+      "license": "Open Academic Dataset",
+      "multimodal_status": "Field object detection and disease identification."
+    }
+  ],
+  "environmental_pairing_protocol": {
+    "supported_features": [
+      {
+        "name": "temperature",
+        "unit": "\u00b0C",
+        "normal_range": [
+          15.0,
+          42.0
+        ],
+        "description": "Ambient greenhouse canopy temperature"
+      },
+      {
+        "name": "relative_humidity",
+        "unit": "%",
+        "normal_range": [
+          30.0,
+          95.0
+        ],
+        "description": "Greenhouse relative humidity percentage"
+      },
+      {
+        "name": "rainfall",
+        "unit": "mm",
+        "normal_range": [
+          0.0,
+          150.0
+        ],
+        "description": "Precipitation over 24-hour observation window"
+      },
+      {
+        "name": "solar_radiation",
+        "unit": "W/m\u00b2",
+        "normal_range": [
+          100.0,
+          1200.0
+        ],
+        "description": "Instantaneous or daily solar irradiance"
+      },
+      {
+        "name": "wind_speed",
+        "unit": "m/s",
+        "normal_range": [
+          0.0,
+          15.0
+        ],
+        "description": "Air circulation or ventilation speed inside canopy"
+      }
+    ],
+    "correlation_notes": "Higher humidity (>80%) and moderate temperatures (22-28\u00b0C) are epidemiologically correlated with fungal sporulation (Anthracnose, Powdery Mildew), whereas hot dry conditions stress foliage (Die Back)."
+  }
+}
